@@ -1,0 +1,440 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#9d123f">
+  <title>Finalizar compra · Popozuda</title>
+  <link rel="icon" href="images/Logo-popozuda-cor2.svg">
+  <link rel="preload" as="font" href="fonts/plusjakartasans_n4.d80b0f185669787ac4b44bf52c1a511eaaf37245.woff2" type="font/woff2" crossorigin>
+  <link rel="preload" as="font" href="fonts/bricolagegrotesque_n7.de5675dd7a8e145fdc4cb2cfe67a16cb085528d0.woff2" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/checkout.css">
+</head>
+<body class="checkout">
+
+  <!-- ===== HEADER ===== -->
+  <header class="ck-header">
+    <div class="ck-header__inner">
+      <a class="ck-logo" href="index.html" aria-label="Voltar para a loja Popozuda"></a>
+      <ol class="ck-steps" aria-label="Etapas do checkout">
+        <li class="ck-steps__item is-active" data-step="contact"><span>1</span>Dados</li>
+        <li class="ck-steps__item" data-step="shipping"><span>2</span>Entrega</li>
+        <li class="ck-steps__item" data-step="payment"><span>3</span>Pagamento</li>
+      </ol>
+      <div class="ck-secure">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="10" width="16" height="11" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8 10V7.5a4 4 0 0 1 8 0V10" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="15.5" r="1.4" fill="currentColor"/></svg>
+        <span>Compra <strong>100% segura</strong></span>
+      </div>
+    </div>
+    <ul class="ck-trustbar">
+      <li>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="10" width="16" height="11" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8 10V7.5a4 4 0 0 1 8 0V10" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+        Compra segura
+      </li>
+      <li>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7h11v10H3z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M14 11h4l3 3v3h-7z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><circle cx="7" cy="18" r="1.6" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17.5" cy="18" r="1.6" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+        Frete grátis
+      </li>
+      <li>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5 20 6v6c0 4.6-3.2 8.3-8 9.5C7.2 20.3 4 16.6 4 12V6l8-3.5Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="m8.8 12 2.2 2.2 4.4-4.6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        7 dias para troca
+      </li>
+    </ul>
+  </header>
+
+  <main class="ck-main">
+    <section class="ck-intro" aria-label="Resumo do checkout">
+      <div class="ck-intro__product">
+        <img src="images/Creme_aa4ab120-1a59-45b1-98a1-352681e7b405.webp" alt="Creme Popozuda 200g" width="68" height="68">
+        <div class="ck-intro__product-info">
+          <strong>Creme Popozuda</strong>
+          <span>200g · <span data-qty-label>2 unidades</span></span>
+        </div>
+        <div class="ck-qty">
+          <button type="button" class="ck-qty__btn" data-qty-minus aria-label="Diminuir quantidade">−</button>
+          <span class="ck-qty__value" data-qty-value>2</span>
+          <button type="button" class="ck-qty__btn" data-qty-plus aria-label="Aumentar quantidade">+</button>
+        </div>
+      </div>
+      <ol class="ck-intro__steps" aria-label="Etapas do checkout">
+        <li class="ck-steps__item is-active" data-step="contact"><span>1</span>Dados</li>
+        <li class="ck-steps__item" data-step="shipping"><span>2</span>Entrega</li>
+        <li class="ck-steps__item" data-step="payment"><span>3</span>Pagamento</li>
+      </ol>
+    </section>
+
+    <div class="ck-layout">
+
+      <!-- ===== FORM COLUMN ===== -->
+      <form class="ck-form" id="ck-form" novalidate autocomplete="on">
+
+        <!-- 1. Contato -->
+        <section class="ck-card" id="section-contact" data-section="contact">
+          <header class="ck-card__head">
+            <span class="ck-card__num">1</span>
+            <div>
+              <h2 class="ck-card__title">Seus dados</h2>
+              <p class="ck-card__sub">Pra confirmação e rastreio do pedido.</p>
+            </div>
+            <span class="ck-card__check" aria-hidden="true"></span>
+          </header>
+
+          <div class="ck-grid">
+            <div class="ck-field ck-col-12">
+              <label for="name">Nome completo</label>
+              <input id="name" name="name" type="text" autocomplete="name" placeholder="Como está no seu documento" required>
+              <small class="ck-error"></small>
+            </div>
+            <div class="ck-field ck-col-12">
+              <label for="email">E-mail</label>
+              <input id="email" name="email" type="email" inputmode="email" autocomplete="email" placeholder="seu@email.com" required>
+              <small class="ck-error"></small>
+            </div>
+            <div class="ck-field ck-col-6">
+              <label for="cpf">CPF</label>
+              <input id="cpf" name="cpf" type="text" inputmode="numeric" autocomplete="off" placeholder="000.000.000-00" data-mask="cpf" required>
+              <small class="ck-error"></small>
+            </div>
+            <div class="ck-field ck-col-6">
+              <label for="phone">Celular / WhatsApp</label>
+              <input id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel-national" placeholder="(00) 00000-0000" data-mask="phone" required>
+              <small class="ck-error"></small>
+            </div>
+          </div>
+        </section>
+
+        <!-- 2. Entrega -->
+        <section class="ck-card" id="section-shipping" data-section="shipping">
+          <header class="ck-card__head">
+            <span class="ck-card__num">2</span>
+            <div>
+              <h2 class="ck-card__title">Entrega</h2>
+              <p class="ck-card__sub">Consulta automática de endereço via CEP.</p>
+            </div>
+            <span class="ck-card__check" aria-hidden="true"></span>
+          </header>
+
+          <div class="ck-grid">
+            <div class="ck-field ck-col-6 ck-field--cep">
+              <label for="cep">CEP</label>
+              <input id="cep" name="cep" type="text" inputmode="numeric" autocomplete="postal-code" placeholder="00000-000" data-mask="cep" required>
+              <span class="ck-spinner" aria-hidden="true"></span>
+              <small class="ck-error"></small>
+            </div>
+            <div class="ck-field ck-col-6 ck-field--link">
+              <a href="https://buscacepinter.correios.com.br/app/endereco/index.php" target="_blank" rel="noopener">Não sei meu CEP</a>
+            </div>
+
+            <div class="ck-address" id="ck-address" hidden>
+              <div class="ck-field ck-col-8">
+                <label for="street">Endereço</label>
+                <input id="street" name="street" type="text" autocomplete="address-line1" placeholder="Rua, avenida..." required>
+                <small class="ck-error"></small>
+              </div>
+              <div class="ck-field ck-col-4">
+                <label for="number">Número</label>
+                <input id="number" name="number" type="text" inputmode="numeric" placeholder="123" required>
+                <small class="ck-error"></small>
+              </div>
+              <div class="ck-field ck-col-6">
+                <label for="complement">Complemento <em>(opcional)</em></label>
+                <input id="complement" name="complement" type="text" autocomplete="address-line2" placeholder="Apto, bloco, casa...">
+              </div>
+              <div class="ck-field ck-col-6">
+                <label for="district">Bairro</label>
+                <input id="district" name="district" type="text" autocomplete="address-level3" required>
+                <small class="ck-error"></small>
+              </div>
+              <div class="ck-field ck-col-8">
+                <label for="city">Cidade</label>
+                <input id="city" name="city" type="text" autocomplete="address-level2" required>
+                <small class="ck-error"></small>
+              </div>
+              <div class="ck-field ck-col-4">
+                <label for="state">Estado</label>
+                <select id="state" name="state" autocomplete="address-level1" required>
+                  <option value="">UF</option>
+                  <option>AC</option><option>AL</option><option>AP</option><option>AM</option><option>BA</option><option>CE</option><option>DF</option><option>ES</option><option>GO</option><option>MA</option><option>MT</option><option>MS</option><option>MG</option><option>PA</option><option>PB</option><option>PR</option><option>PE</option><option>PI</option><option>RJ</option><option>RN</option><option>RS</option><option>RO</option><option>RR</option><option>SC</option><option>SP</option><option>SE</option><option>TO</option>
+                </select>
+                <small class="ck-error"></small>
+              </div>
+              <div class="ck-field ck-col-12">
+                <label for="reference">Ponto de referência <em>(opcional)</em></label>
+                <input id="reference" name="reference" type="text" placeholder="Ex.: próximo à padaria">
+              </div>
+            </div>
+          </div>
+
+          <div class="ck-shipping" id="ck-shipping" hidden>
+            <p class="ck-shipping__title">Forma de envio</p>
+            <label class="ck-radio-card is-selected">
+              <input type="radio" name="shipping" value="free" data-price="0" checked>
+              <span class="ck-radio-card__dot" aria-hidden="true"></span>
+              <span class="ck-radio-card__body">
+                <span class="ck-radio-card__name">Envio padrão</span>
+                <span class="ck-radio-card__desc" data-eta="free">Chega em 7 a 9 dias úteis</span>
+              </span>
+              <span class="ck-radio-card__price is-free">Grátis</span>
+            </label>
+            <label class="ck-radio-card">
+              <input type="radio" name="shipping" value="express" data-price="19.90">
+              <span class="ck-radio-card__dot" aria-hidden="true"></span>
+              <span class="ck-radio-card__body">
+                <span class="ck-radio-card__name">Envio expresso</span>
+                <span class="ck-radio-card__desc" data-eta="express">Chega em 2 a 4 dias úteis</span>
+              </span>
+              <span class="ck-radio-card__price">R$ 19,90</span>
+            </label>
+          </div>
+        </section>
+
+        <!-- 3. Pagamento -->
+        <section class="ck-card" id="section-payment" data-section="payment">
+          <header class="ck-card__head">
+            <span class="ck-card__num">3</span>
+            <div>
+              <h2 class="ck-card__title">Pagamento</h2>
+              <p class="ck-card__sub">Ambiente criptografado. Dados não salvos.</p>
+            </div>
+            <span class="ck-card__check" aria-hidden="true"></span>
+          </header>
+
+          <div class="ck-paytabs" role="tablist" aria-label="Forma de pagamento">
+            <button type="button" class="ck-paytab is-active" role="tab" aria-selected="true" data-method="pix" id="tab-pix" aria-controls="panel-pix">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="5.15" y="5.15" width="13.7" height="13.7" rx="3.2" transform="rotate(45 12 12)" fill="none" stroke="currentColor" stroke-width="1.8"></rect>
+                <path d="M7.15 7.15c2.7 3.7 7 5.1 9.7 9.7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path>
+                <path d="M16.85 7.15c-2.7 3.7-7 5.1-9.7 9.7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path>
+              </svg>
+              <span>Pague com Pix</span>
+              <b class="ck-tag ck-tag--green">Aprovação imediata</b>
+            </button>
+            <button type="button" class="ck-paytab" role="tab" aria-selected="false" data-method="card" id="tab-card" aria-controls="panel-card">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M2 10h20" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M6 15h4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+              <span>Cartão de crédito</span>
+              <b class="ck-tag">até 3x</b>
+            </button>
+          </div>
+
+          <!-- Pix panel -->
+          <div class="ck-paypanel is-active" id="panel-pix" role="tabpanel" aria-labelledby="tab-pix">
+            <div class="ck-pixinfo">
+              <div class="ck-pixinfo__icon">
+                <img src="images/pix-logo.png" alt="" width="32" height="32">
+              </div>
+              <div>
+                <p class="ck-pixinfo__title">Pague <strong data-total>R$ 0,00</strong> via Pix</p>
+                <ul class="ck-pixinfo__list">
+                  <li>O QR Code e o código “copia e cola” aparecem na próxima tela.</li>
+                  <li>Pagamento confirmado na hora e pedido liberado para envio.</li>
+                  <li>O código expira em 30 minutos.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card panel -->
+          <div class="ck-paypanel" id="panel-card" role="tabpanel" aria-labelledby="tab-card" hidden>
+            <div class="ck-payerror" id="ck-card-error" hidden role="alert">
+              <strong>Não foi possível conectar com o banco emissor.</strong>
+              <p>Seu cartão não foi cobrado e nenhum dado foi salvo. Pague com Pix para confirmar o pedido agora — aprovação imediata.</p>
+              <button type="button" class="ck-btn ck-btn--primary" id="ck-try-pix">Pagar com Pix</button>
+            </div>
+            <div class="ck-grid">
+              <div class="ck-field ck-col-12 ck-field--card">
+                <label for="card-number">Número do cartão</label>
+                <div class="ck-field__control">
+                  <input id="card-number" name="card-number" type="text" inputmode="numeric" autocomplete="cc-number" placeholder="0000 0000 0000 0000" data-mask="card" data-card-required>
+                  <span class="ck-brand" id="ck-brand" aria-hidden="true"></span>
+                </div>
+                <small class="ck-error"></small>
+              </div>
+              <div class="ck-field ck-col-12">
+                <label for="card-name">Nome impresso no cartão</label>
+                <input id="card-name" name="card-name" type="text" autocomplete="cc-name" placeholder="Como aparece no cartão" data-card-required>
+                <small class="ck-error"></small>
+              </div>
+              <div class="ck-field ck-col-6">
+                <label for="card-expiry">Validade</label>
+                <input id="card-expiry" name="card-expiry" type="text" inputmode="numeric" autocomplete="cc-exp" placeholder="MM/AA" data-mask="expiry" data-card-required>
+                <small class="ck-error"></small>
+              </div>
+              <div class="ck-field ck-col-6 ck-field--cvv">
+                <label for="card-cvv">CVV <button type="button" class="ck-help" aria-label="O que é CVV?" data-tip="Os 3 dígitos no verso do cartão (4 na frente, no Amex).">?</button></label>
+                <input id="card-cvv" name="card-cvv" type="text" inputmode="numeric" autocomplete="cc-csc" placeholder="123" data-mask="cvv" data-card-required>
+                <small class="ck-error"></small>
+              </div>
+              <div class="ck-field ck-col-12">
+                <label for="installments">Parcelas</label>
+                <select id="installments" name="installments"></select>
+              </div>
+              <div class="ck-field ck-col-12 ck-field--checkbox">
+                <label class="ck-check">
+                  <input type="checkbox" id="same-holder" checked>
+                  <span class="ck-check__box" aria-hidden="true"></span>
+                  <span>O titular do cartão é o mesmo do CPF informado</span>
+                </label>
+              </div>
+              <div class="ck-field ck-col-12" id="holder-cpf-field" hidden>
+                <label for="holder-cpf">CPF do titular</label>
+                <input id="holder-cpf" name="holder-cpf" type="text" inputmode="numeric" placeholder="000.000.000-00" data-mask="cpf">
+                <small class="ck-error"></small>
+              </div>
+            </div>
+            <p class="ck-cardnote">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="10" width="16" height="11" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8 10V7.5a4 4 0 0 1 8 0V10" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+              Dados criptografados com padrão PCI. Não armazenamos o número do seu cartão.
+            </p>
+          </div>
+
+          <div class="ck-submit">
+            <button type="submit" class="ck-btn ck-btn--primary" id="ck-submit">
+              <span class="ck-btn__label" data-cta>Finalizar pedido</span>
+              <span class="ck-btn__amount" data-total>R$ 0,00</span>
+            </button>
+            <p class="ck-submit__legal">
+              Ao finalizar, você concorda com os <a href="#" target="_blank" rel="noopener">termos de compra</a> e a <a href="#" target="_blank" rel="noopener">política de privacidade</a>.
+            </p>
+          </div>
+
+          <ul class="ck-trust">
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5 20 6v6c0 4.6-3.2 8.3-8 9.5C7.2 20.3 4 16.6 4 12V6l8-3.5Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="m8.8 12 2.2 2.2 4.4-4.6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span><strong>Satisfação garantida</strong><br>7 dias para troca ou devolução</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7h11v10H3z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M14 11h4l3 3v3h-7z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><circle cx="7" cy="18" r="1.6" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17.5" cy="18" r="1.6" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+              <span><strong>Frete grátis</strong><br>para todo o Brasil</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="10" width="16" height="11" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8 10V7.5a4 4 0 0 1 8 0V10" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+              <span><strong>Pagamento seguro</strong><br>certificado SSL 256 bits</span>
+            </li>
+          </ul>
+        </section>
+      </form>
+
+      <!-- ===== SUMMARY COLUMN ===== -->
+      <div class="ck-summary-wrap">
+      <button type="button" class="ck-btn ck-btn--primary ck-summary__buy" id="ck-summary-btn">
+        <span class="ck-btn__label" data-cta>Finalizar pedido</span>
+      </button>
+      <p class="ck-summary__legal">
+        Ao finalizar, você concorda com os termos de compra. Seus dados não são compartilhados com terceiros.
+      </p>
+        <aside class="ck-summary" id="ck-summary">
+        <div class="ck-summary__inner">
+          <h2 class="ck-summary__title">Resumo do pedido</h2>
+
+          <div class="ck-product">
+            <div class="ck-product__thumb">
+              <img src="images/Creme_aa4ab120-1a59-45b1-98a1-352681e7b405.webp" alt="Creme Popozuda 200g" width="72" height="72">
+              <span class="ck-product__qty" data-qty-badge>2</span>
+            </div>
+            <div class="ck-product__info">
+              <p class="ck-product__name">Creme Popozuda</p>
+              <p class="ck-product__meta">200g · <span data-qty-label>2 unidades</span></p>
+              <p class="ck-product__rating">
+                <span aria-hidden="true">★★★★★</span> 4,9 <em>(10 avaliações)</em>
+              </p>
+            </div>
+            <div class="ck-product__price">
+              <s data-compare>R$ 139,90</s>
+              <strong data-subtotal>R$ 89,90</strong>
+            </div>
+          </div>
+
+          <details class="ck-coupon">
+            <summary>Tem um cupom de desconto?</summary>
+            <div class="ck-coupon__row">
+              <input type="text" id="coupon" placeholder="Digite o código" autocomplete="off" autocapitalize="characters">
+              <button type="button" class="ck-btn ck-btn--ghost" id="coupon-apply">Aplicar</button>
+            </div>
+            <small class="ck-coupon__msg" id="coupon-msg"></small>
+          </details>
+
+          <dl class="ck-totals">
+            <div><dt>Subtotal</dt><dd data-subtotal>R$ 89,90</dd></div>
+            <div class="ck-totals__discount"><dt>Desconto da oferta</dt><dd data-discount>-R$ 50,00</dd></div>
+            <div class="ck-totals__coupon" data-coupon-row hidden><dt>Cupom <span data-coupon-code></span></dt><dd data-coupon-value>-R$ 0,00</dd></div>
+            <div><dt>Frete</dt><dd data-shipping class="is-free">Grátis</dd></div>
+            <div class="ck-totals__total"><dt>Total</dt><dd><strong data-total>R$ 89,90</strong></dd></div>
+          </dl>
+        </div>
+      </aside>
+      </div>
+    </div>
+  </main>
+
+  <!-- ===== SUCCESS: PIX ===== -->
+  <section class="ck-result" id="result-pix" hidden>
+    <div class="ck-result__card">
+      <span class="ck-result__icon ck-result__icon--pix">
+        <img src="images/pix-logo.png" alt="Pix" width="40" height="40">
+      </span>
+      <h1 class="ck-result__title">Quase lá! Pague com Pix para confirmar</h1>
+      <p class="ck-result__sub">Pedido <strong data-order-id>#000000</strong> · expira em <strong class="ck-timer" data-timer>30:00</strong></p>
+
+      <div class="ck-pix">
+        <div class="ck-pix__qr" id="pix-qr" aria-label="QR Code Pix"></div>
+        <div class="ck-pix__side">
+          <label class="ck-pix__copylabel" for="pix-code">Código Pix copia e cola</label>
+          <div class="ck-pix__copy">
+            <input type="text" id="pix-code" readonly value="">
+            <button type="button" class="ck-btn ck-btn--primary" id="pix-copy">Copiar código</button>
+          </div>
+          <p class="ck-pix__amount">Valor: <strong data-total>R$ 0,00</strong></p>
+          <ol class="ck-pix__steps">
+            <li>Abra o app do seu banco e escolha <b>Pix</b>.</li>
+            <li>Escaneie o QR Code ou use o <b>copia e cola</b>.</li>
+            <li>Confirme e pronto — te avisamos no WhatsApp.</li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="ck-result__order" data-order-summary></div>
+      <button type="button" class="ck-btn ck-btn--primary ck-pix__confirm" id="pix-paid">Já paguei o Pix</button>
+      <p class="ck-result__note">Depois de pagar no banco, toque acima para ver a confirmação do pedido.</p>
+    </div>
+  </section>
+
+  <!-- ===== SUCCESS: CARD ===== -->
+  <section class="ck-result" id="result-card" hidden>
+    <div class="ck-result__card">
+      <span class="ck-result__icon ck-result__icon--ok">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </span>
+      <h1 class="ck-result__title">Pedido confirmado!</h1>
+      <p class="ck-result__sub">Pedido <strong data-order-id>#000000</strong> · enviamos a confirmação para <strong data-order-email></strong></p>
+      <div class="ck-result__order" data-order-summary></div>
+      <p class="ck-result__note">Você receberá o código de rastreio por e-mail e WhatsApp assim que o pedido for postado.</p>
+      <a class="ck-result__back" href="index.html">Voltar para a loja</a>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="ck-footer">
+    <div class="ck-footer__inner">
+      <a class="ck-footer__logo" href="index.html" aria-label="Popozuda"></a>
+      <nav class="ck-footer__nav" aria-label="Rodapé">
+        <a href="https://wa.me/5554981258435?text=Oii%2C%20preciso%20de%20ajuda!" target="_blank" rel="noopener">Ajuda</a>
+        <a href="https://loja-popozuda.myshopify.com/pages/politicas" target="_blank" rel="noopener">Privacidade</a>
+        <a href="https://loja-popozuda.myshopify.com/pages/politicas" target="_blank" rel="noopener">Trocas</a>
+        <a href="https://www.instagram.com/maispopozuda/" target="_blank" rel="noopener">Instagram</a>
+      </nav>
+      <p class="ck-footer__copy">© 2026 Popozuda</p>
+    </div>
+  </footer>
+
+  <!-- ===== LOADING OVERLAY ===== -->
+  <div class="ck-loading" id="ck-loading" hidden aria-live="assertive">
+    <div class="ck-loading__box">
+      <span class="ck-spinner ck-spinner--lg" aria-hidden="true"></span>
+      <p data-loading-text>Processando seu pedido…</p>
+    </div>
+  </div>
+
+  <script src="js/checkout.js" defer></script>
+</body>
+</html>

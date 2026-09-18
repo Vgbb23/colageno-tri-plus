@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Colágeno TRI PLUS Verisol Tipo I, II e III | Body Action</title>
+    <!-- Utmify: pixel + captura de UTMs -->
+    <script>
+      window.pixelId = "6aac3d25bebb07a769b7e536";
+      var a = document.createElement("script");
+      a.setAttribute("async", "");
+      a.setAttribute("defer", "");
+      a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+      document.head.appendChild(a);
+    </script>
+    <script
+      src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+      data-utmify-prevent-xcod-sck
+      data-utmify-prevent-subids
+      async
+      defer
+    ></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <!-- Preserva UTMs em links externos / âncoras da página -->
+    <script>
+      (function () {
+        function appendParamsToLinks() {
+          var params = window.location.search;
+          if (!params) return;
+          var links = document.querySelectorAll("a");
+          for (var i = 0; i < links.length; i++) {
+            var link = links[i];
+            if (link.getAttribute("data-utm-applied") === "1") continue;
+            var href = link.getAttribute("href");
+            if (!href || href.startsWith("#") || href.startsWith("javascript:")) continue;
+            if (href.indexOf("utm_source=") !== -1 || href.indexOf("utm_campaign=") !== -1) {
+              link.setAttribute("data-utm-applied", "1");
+              continue;
+            }
+            if (href.indexOf("?") === -1) {
+              link.setAttribute("href", href + params);
+            } else {
+              link.setAttribute("href", href + "&" + params.slice(1));
+            }
+            link.setAttribute("data-utm-applied", "1");
+          }
+        }
+        appendParamsToLinks();
+        if (typeof MutationObserver !== "undefined") {
+          new MutationObserver(appendParamsToLinks).observe(document.body, {
+            childList: true,
+            subtree: true,
+          });
+        }
+      })();
+    </script>
+  </body>
+</html>
